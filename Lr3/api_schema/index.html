@@ -1,0 +1,1163 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>API Документация - Web programming report</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web programming report" class="md-header__button md-logo" aria-label="Web programming report" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web programming report
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Документация
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web programming report" class="md-nav__button md-logo" aria-label="Web programming report" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Web programming report
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lab 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lab 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr2/task/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Lab 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr3.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pr 3.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pr 3.3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pr 3.3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr33/api/warriors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Warriors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr33/api/skills/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SKills
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Общая информация
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Общая информация">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Аутентификация
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Фильтрация и сортировка
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Эндпоинты
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Эндпоинты">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ownerviewset" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. OwnerViewSet (Владельцы)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. OwnerViewSet (Владельцы)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Методы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Поиск и сортировка
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дополнительные действия
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дополнительные действия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-apiownersidrings-" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /api/owners/{id}/rings/ - Информация о рингах владельца
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dogviewset" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. DogViewSet (Собаки)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. DogViewSet (Собаки)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Методы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Поиск и сортировка
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дополнительные действия
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дополнительные действия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-apidogsiddisqualify-" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /api/dogs/{id}/disqualify/ - Дисквалификация собаки
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apidogsby_club-" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /api/dogs/by_club/ - Породы клуба
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apidogsdisqualified_count-" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /api/dogs/disqualified_count/ - Количество дисквалифицированных собак
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apidogsparticipants_by_breed-" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /api/dogs/participants_by_breed/ - Участники по породам
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-showviewset" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ShowViewSet (Выставки)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ShowViewSet (Выставки)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Методы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Поиск и сортировка
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дополнительные действия
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дополнительные действия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-apishowsidadd_expert-" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /api/shows/{id}/add_expert/ - Добавить эксперта к выставке
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-apishowsidremove_expert-" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /api/shows/{id}/remove_expert/ - Удалить эксперта с выставки
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apishowsidresults-" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /api/shows/{id}/results/ - Результаты выставки
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="api">API Документация</h1>
+<h2 id="_1">Общая информация</h2>
+<p>Данное API предоставляет доступ к управлению данными о владельцах собак, собаках, выставках, участиях, экспертах и оценках в системе выставок собак.</p>
+<p>Все эндпоинты поддерживают методы CRUD, а также имеют дополнительные действия, описанные ниже.</p>
+<h3 id="_2">Аутентификация</h3>
+<p>Все запросы требуют аутентификации с использованием токена. Токен должен быть передан в заголовке <code>Authorization</code> в формате:</p>
+<pre><code>Authorization: Token &lt;ваш токен&gt;
+</code></pre>
+<h3 id="_3">Фильтрация и сортировка</h3>
+<ul>
+<li><strong>Поиск</strong>: Эндпоинты поддерживают поиск по определенным полям с использованием параметра <code>search</code>.</li>
+<li><strong>Сортировка</strong>: Эндпоинты поддерживают сортировку по определенным полям с использованием параметра <code>ordering</code>.</li>
+</ul>
+<hr />
+<h2 id="_4">Эндпоинты</h2>
+<h3 id="1-ownerviewset">1. OwnerViewSet (Владельцы)</h3>
+<p><strong>Базовый URL</strong>: <code>/api/owners/</code></p>
+<h4 id="_5">Методы</h4>
+<ul>
+<li><code>GET /api/owners/</code> - Получение списка владельцев.</li>
+<li><code>POST /api/owners/</code> - Создание нового владельца.</li>
+<li><code>GET /api/owners/{id}/</code> - Получение информации о конкретном владельце.</li>
+<li><code>PUT /api/owners/{id}/</code> - Полное обновление информации о владельце.</li>
+<li><code>PATCH /api/owners/{id}/</code> - Частичное обновление информации о владельце.</li>
+<li><code>DELETE /api/owners/{id}/</code> - Удаление владельца.</li>
+</ul>
+<h4 id="_6">Поиск и сортировка</h4>
+<ul>
+<li><strong>Поиск</strong>: <code>search</code> по полям <code>last_name</code>, <code>first_name</code>, <code>patronymic</code>, <code>contact_info</code>.</li>
+<li><strong>Сортировка</strong>: <code>ordering</code> по полям <code>last_name</code>, <code>first_name</code>.</li>
+</ul>
+<h4 id="_7">Дополнительные действия</h4>
+<h5 id="get-apiownersidrings-"><code>GET /api/owners/{id}/rings/</code> - Информация о рингах владельца</h5>
+<ul>
+<li><strong>Описание</strong>: Получить информацию о рингах, на которых выступают собаки данного владельца.</li>
+<li><strong>Параметры</strong>:</li>
+<li><code>id</code> (UUID) - Идентификатор владельца.</li>
+<li><strong>Пример ответа</strong>:</li>
+</ul>
+<p><code>json
+  [
+    {
+      "show_name": "Осенняя выставка",
+      "dog_name": "Бобик",
+      "ring_info": "Ринг 1: Лабрадоры, 10:00"
+    },
+    {
+      "show_name": "Зимняя выставка",
+      "dog_name": "Рекс",
+      "ring_info": "Ринг 2: Немецкие овчарки, 12:00"
+    }
+  ]</code></p>
+<hr />
+<h3 id="2-dogviewset">2. DogViewSet (Собаки)</h3>
+<p><strong>Базовый URL</strong>: <code>/api/dogs/</code></p>
+<h4 id="_8">Методы</h4>
+<ul>
+<li><code>GET /api/dogs/</code> - Получение списка собак.</li>
+<li><code>POST /api/dogs/</code> - Создание новой собаки.</li>
+<li><code>GET /api/dogs/{id}/</code> - Получение информации о конкретной собаке.</li>
+<li><code>PUT /api/dogs/{id}/</code> - Полное обновление информации о собаке.</li>
+<li><code>PATCH /api/dogs/{id}/</code> - Частичное обновление информации о собаке.</li>
+<li><code>DELETE /api/dogs/{id}/</code> - Удаление собаки.</li>
+</ul>
+<h4 id="_9">Поиск и сортировка</h4>
+<ul>
+<li><strong>Поиск</strong>: <code>search</code> по полям <code>name</code>, <code>breed</code>, <code>owner__first_name</code>, <code>owner__last_name</code>, <code>club_name</code>.</li>
+<li><strong>Сортировка</strong>: <code>ordering</code> по полям <code>age</code>, <code>name</code>.</li>
+</ul>
+<h4 id="_10">Дополнительные действия</h4>
+<h5 id="post-apidogsiddisqualify-"><code>POST /api/dogs/{id}/disqualify/</code> - Дисквалификация собаки</h5>
+<ul>
+<li><strong>Описание</strong>: Отстранить собаку от участия в выставке.</li>
+<li><strong>Параметры</strong>:</li>
+<li><code>id</code> (UUID) - Идентификатор собаки.</li>
+<li><strong>Тело запроса</strong>: не требуется.</li>
+<li><strong>Пример ответа</strong>:</li>
+</ul>
+<p><code>json
+  {
+    "status": "Собака Бобик дисквалифицирована"
+  }</code></p>
+<h5 id="get-apidogsby_club-"><code>GET /api/dogs/by_club/</code> - Породы клуба</h5>
+<ul>
+<li><strong>Описание</strong>: Получить список пород, представленных заданным клубом.</li>
+<li><strong>Параметры запроса</strong>:</li>
+<li><code>club_name</code> (string) - Название клуба (обязательный).</li>
+<li><strong>Пример запроса</strong>:</li>
+</ul>
+<p><code>GET /api/dogs/by_club/?club_name=Клуб любителей собак</code></p>
+<ul>
+<li><strong>Пример ответа</strong>:</li>
+</ul>
+<p><code>json
+  {
+    "club_name": "Клуб любителей собак",
+    "breeds": [
+      {"breed": "Лабрадор"},
+      {"breed": "Немецкая овчарка"}
+    ]
+  }</code></p>
+<h5 id="get-apidogsdisqualified_count-"><code>GET /api/dogs/disqualified_count/</code> - Количество дисквалифицированных собак</h5>
+<ul>
+<li><strong>Описание</strong>: Получить количество собак, отстраненных от участия в выставке.</li>
+<li><strong>Параметры</strong>: нет.</li>
+<li><strong>Пример ответа</strong>:</li>
+</ul>
+<p><code>json
+  {
+    "disqualified_dogs_count": 5
+  }</code></p>
+<h5 id="get-apidogsparticipants_by_breed-"><code>GET /api/dogs/participants_by_breed/</code> - Участники по породам</h5>
+<ul>
+<li><strong>Описание</strong>: Получить количество участников по каждой породе.</li>
+<li><strong>Параметры</strong>: нет.</li>
+<li><strong>Пример ответа</strong>:</li>
+</ul>
+<p><code>json
+  [
+    {"dog__breed": "Лабрадор", "count": 10},
+    {"dog__breed": "Немецкая овчарка", "count": 8}
+  ]</code></p>
+<hr />
+<h3 id="3-showviewset">3. ShowViewSet (Выставки)</h3>
+<p><strong>Базовый URL</strong>: <code>/api/shows/</code></p>
+<h4 id="_11">Методы</h4>
+<ul>
+<li><code>GET /api/shows/</code> - Получение списка выставок.</li>
+<li><code>POST /api/shows/</code> - Создание новой выставки.</li>
+<li><code>GET /api/shows/{id}/</code> - Получение информации о конкретной выставке.</li>
+<li><code>PUT /api/shows/{id}/</code> - Полное обновление информации о выставке.</li>
+<li><code>PATCH /api/shows/{id}/</code> - Частичное обновление информации о выставке.</li>
+<li><code>DELETE /api/shows/{id}/</code> - Удаление выставки.</li>
+</ul>
+<h4 id="_12">Поиск и сортировка</h4>
+<ul>
+<li><strong>Поиск</strong>: <code>search</code> по полям <code>name</code>, <code>type</code>, <code>location</code>, <code>sponsor</code>.</li>
+<li><strong>Сортировка</strong>: <code>ordering</code> по полям <code>date</code>, <code>name</code>.</li>
+</ul>
+<h4 id="_13">Дополнительные действия</h4>
+<h5 id="post-apishowsidadd_expert-"><code>POST /api/shows/{id}/add_expert/</code> - Добавить эксперта к выставке</h5>
+<ul>
+<li><strong>Описание</strong>: Добавить эксперта к выставке.</li>
+<li><strong>Параметры</strong>:</li>
+<li><code>id</code> (UUID) - Идентификатор выставки.</li>
+<li><strong>Тело запроса</strong>:</li>
+</ul>
+<p><code>json
+  {
+    "expert_id": "UUID эксперта"
+  }</code></p>
+<ul>
+<li><strong>Пример ответа</strong>:</li>
+</ul>
+<p><code>json
+  {
+    "status": "Эксперт Петр Петров добавлен к выставке Осенняя выставка"
+  }</code></p>
+<h5 id="post-apishowsidremove_expert-"><code>POST /api/shows/{id}/remove_expert/</code> - Удалить эксперта с выставки</h5>
+<ul>
+<li><strong>Описание</strong>: Снять эксперта с судейства на выставке.</li>
+<li><strong>Параметры</strong>:</li>
+<li><code>id</code> (UUID) - Идентификатор выставки.</li>
+<li><strong>Тело запроса</strong>:</li>
+</ul>
+<p><code>json
+  {
+    "expert_id": "UUID эксперта"
+  }</code></p>
+<ul>
+<li><strong>Пример ответа</strong>:</li>
+</ul>
+<p><code>json
+  {
+    "status": "Эксперт Петр Петров удален с выставки Осенняя выставка"
+  }</code></p>
+<h5 id="get-apishowsidresults-"><code>GET /api/shows/{id}/results/</code> - Результаты выставки</h5>
+<ul>
+<li><strong>Описание</strong>: Получить отчет о результатах заданной выставки.</li>
+<li><strong>Параметры</strong>:</li>
+<li><code>id</code> (UUID) - Идентификатор выставки.</li>
+<li><strong>Пример ответа</strong>:</li>
+</ul>
+<p><code>json
+  {
+    "total_participants": 50,
+    "breeds": [
+      {"dog__breed": "Лабрадор"},
+      {"dog__breed": "Немецкая овчарка"}
+    ],
+    "participants_by_breed": [
+      {"dog__breed": "Лабрадор", "count": 30},
+      {"dog__breed": "Немецкая овчарка", "count": 20}
+    ],
+    "medals_by_breed": [
+      {"dog__breed": "Лабрадор", "medal": "Золото", "count": 5},
+      {"dog__breed": "Немецкая овчарка", "medal": "Серебро", "count": 3}
+    ]
+  }</code></p>
+<hr />
+<p>(Documentation continues...)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
