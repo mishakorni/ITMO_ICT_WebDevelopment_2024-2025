@@ -733,7 +733,7 @@
           <li class="md-nav__item">
   <a href="#4_1" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Сортировка владельцев по имени:
+      4. Сортировка владельцев по дате выдачи удостоверения:
     </span>
   </a>
   
@@ -1179,7 +1179,7 @@
           <li class="md-nav__item">
   <a href="#4_1" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Сортировка владельцев по имени:
+      4. Сортировка владельцев по дате выдачи удостоверения:
     </span>
   </a>
   
@@ -1349,18 +1349,19 @@ for brand_count in car_brand_counts:
 Audi: 2 cars
 Mercedes: 1 car
 </code></pre>
-<h4 id="4_1">4. Сортировка владельцев по имени:</h4>
-<pre><code class="language-python">sorted_owners = CarOwner.objects.order_by('first_name')
-for owner in sorted_owners:
-    print(f&quot;{owner.first_name} {owner.last_name}&quot;)
+<h4 id="4_1">4. Сортировка владельцев по дате выдачи удостоверения:</h4>
+<pre><code class="language-python">sorted_owners_by_license_date = CarOwner.objects.filter(driverlicense__isnull=False).order_by('driverlicense__issue_date')
+for owner in sorted_owners_by_license_date:
+    license_date = owner.driverlicense_set.first().issue_date
+    print(f&quot;{owner.first_name} {owner.last_name} - License Issue Date: {license_date}&quot;)
 </code></pre>
 <h4 id="_13">Результат</h4>
-<pre><code class="language-python">Andrey Pavlov
-Dmitry Ivanov
-Maria Smirnova
-Olga Orlova
-Sergey Kuzmin
-Tatiana Volkova
+<pre><code class="language-python">Andrey Pavlov - License Issue Date: 2024-01-10
+Maria Smirnova - License Issue Date: 2024-02-15
+Sergey Kuzmin - License Issue Date: 2024-03-05
+Olga Orlova - License Issue Date: 2024-04-01
+Dmitry Ivanov - License Issue Date: 2024-05-10
+Tatiana Volkova - License Issue Date: 2024-06-12
 </code></pre>
 
 
